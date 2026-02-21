@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Connexion</title>
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <div class="login-logo">
+      <img src="./logos.png" alt="logo" class="login-logo-img">
+    </div>
+    <div class="login-card">
+      <h1 class="login-titre">Bienvenue</h1>
+      <p class="login-sous-titre">Veuillez vous connecter pour accéder à votre espace.</p>
+      <div id="login-error" class="login-error" style="display:none;">Identifiants incorrects. Veuillez réessayer.</div>
+      <div class="form-group">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username" placeholder="Votre nom d'utilisateur">
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" placeholder="Votre mot de passe">
+      </div>
+    <button class="contact-btn" id="btn-login">Se connecter</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

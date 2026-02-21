@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contactez-nous</title>
+</head>
+<body>
+ <header>
+  <img src="./logos.png" alt="le logo" class="header-image">
+  
+  <!-- Bouton hamburger -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="sujet.html">Sujets</a></li>
+      <li><a href="contact.html">Contactez-nous</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+ <main class="contact-main">
+  <div class="contact-card">
+    <h1 class="contact-titre">Contactez-nous</h1>
+    <p class="contact-sous-titre">Pour toute question sur un sujet en particulier, le fonctionnement du site ou autres.</p>
+
+    <form class="contact-form" action="https://formsubmit.co/meredithhector6@gmail.com" method="POST">
+      
+      <!-- Anti-spam formsubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nouveau message - Thérapie Personnalisée">
+
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+      </div>
+
+      <button type="submit" class="contact-btn">Envoyer</button>
+    </form>
+  </div>
+</main>
+  <footer>
+    <p>Copyright 2026 @Tous droits réservés</p>
+  </footer>
+   <script src="script.js"></script>
+</body>
+</html>
